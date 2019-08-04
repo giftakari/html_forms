@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learn Forms</title>
+    <style>
+      li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mailing list signup</h1>
+    <form action="/mailinglist.php" method="post">
+      <fieldset>
+        <legend>Join our email list</legend>
+        <p>
+          Get news about the brand such as tour dates and special MP4 releases
+          sent to your own email box
+        </p>
+        <ol>
+          <li>
+            <label for="firstlast">Name:</label>
+            <input type="text" name="fullname" id="firstlast" />
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+          </li>
+          <li>
+            <label for="form-psw">Password:</label>
+            <input type="password" name="psw" id="form-psw" maxlength="12" />
+          </li>
+          <li>
+            <label for="msg">Personal Details:</label>
+            <textarea
+              name="personal_details"
+              id="msg"
+              placeholder="50 Words min"
+              row="5"
+              col="50"
+            ></textarea>
+          </li>
+        </ol>
+        <input type="button" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
